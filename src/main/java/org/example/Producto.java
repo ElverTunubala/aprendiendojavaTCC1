@@ -9,7 +9,15 @@ public class Producto {
     //constructor
 
     public Producto() {
+    }
+    public Producto(String nombre, int precioUnitario, String descripcion) {
+        this.nombre = nombre;
+        this.precioUnitario = precioUnitario;
+        this.descripcion = descripcion;
+    }
 
+    public Producto(String nombre) {
+        this.nombre = nombre;
     }
 
     //metodos

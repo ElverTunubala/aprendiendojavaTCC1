@@ -7,37 +7,22 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
 
-        //crear un objeto de la clase Producto
-        Producto producto=new Producto();
+        //creo un objeto de la clase producto
+        Producto producto= new Producto();
+        System.out.println("el nombre del producto es: "+producto.nombre);
 
-        //crear un objeto de la clase Scanner
-        Scanner entradaPorTeclado=new Scanner(System.in);
+        Producto producto2= new Producto("empanada",2000,"jumm");
 
-        //preguntarle al usuario el nombre del producto
-        System.out.println("el producto es: "+producto.nombre);
+        //creo un objeto de la clase cliente
+        Cliente cliente=new Cliente("juan","105546",33,"6675755",true);
 
 
-        System.out.println("Digite el nombre del producto");
-        producto.nombre=entradaPorTeclado.next();
 
-        System.out.println("el producto es: "+producto.nombre);
 
-        //crear un objeto de clase Cliente
 
-        Cliente cliente=new Cliente();
-        System.out.println("digite el nombre del cliente: ");
-        cliente.nombre=entradaPorTeclado.next();
 
-        System.out.println("digite la cedula del cliente: ");
-        cliente.cedula=entradaPorTeclado.next();
 
-        System.out.println("digite la edad del cliente: ");
-        cliente.edad=entradaPorTeclado.nextByte();
 
-        System.out.println("digite el telefono del cliente: ");
-        cliente.telefono=entradaPorTeclado.next();
-
-        
 
 
     }
